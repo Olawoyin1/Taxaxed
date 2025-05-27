@@ -15,6 +15,7 @@ import Loader from "./utils/Loader";
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
+const TalkToExpertSection = lazy(() => import("./pages/Expert"));
 const Contact = lazy(() => import("./pages/Contact"));
 const ErrorPage = lazy(() => import("./utils/ErrorPage"));
 const SharedLayout = lazy(() => import("./layouts/SharedLayout"));
@@ -46,6 +47,15 @@ const main = createBrowserRouter(
         element={
           <Suspense fallback={<Loader />}>
             <About />
+          </Suspense>
+        }
+      />
+      
+      <Route
+        path="talk-to-an-expert"
+        element={
+          <Suspense fallback={<Loader />}>
+            <TalkToExpertSection />
           </Suspense>
         }
       />

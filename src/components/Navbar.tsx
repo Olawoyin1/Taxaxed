@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow relative z-50">
-      <div className="container mx-auto py-7 px-4 flex items-center justify-between">
+      <div className="container mx-auto py-7  flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src="/images/logo.png" className="w-9" alt="logo" />
@@ -19,11 +19,16 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 text-gray-600 font-medium">
+        <div className="hidden md:flex items-center space-x-6 text-gray-600 font-medium">
           <a href="#" className="hover:text-blue-600 transition-colors">Home</a>
           <a href="#" className="hover:text-blue-600 transition-colors">About</a>
           <a href="#" className="hover:text-blue-600 transition-colors">Services</a>
           <a href="#" className="hover:text-blue-600 transition-colors">Contact</a>
+          <Link to='/talk-to-an-expert'>
+          <button className="bg-[#E862FF] hover:bg-[#e862ffcc] text-white px-8 py-2 text-lg rounded-md transition">
+                Talk to an Expert
+              </button>
+          </Link>
         </div>
 
         {/* Mobile Hamburger */}
