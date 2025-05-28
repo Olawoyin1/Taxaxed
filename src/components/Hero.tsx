@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="pt-24 pb-16 bg-gradient-to-br from-[#FFFFDD] via-white to-gray-50">
+    <section className="pt-10 pb-10 bg-gradient-to-br from-[#FFFFDD] via-white to-gray-50">
       <div className="container mx-auto ">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -21,15 +21,15 @@ const Hero = () => {
               for UK freelancers, self-employed individuals, and small business owners.
             </p>
 
-            <div className="flex sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-slide-up">
+            <div className="flex sm:flex-row gap-4 justify-center lg:justify-start mb-7 md:mb-0 animate-slide-up">
                 <Link to='/'>
-                    <button className="bg-[#E862FF] hover:bg-[#e862ffcc] text-white text-sm px-4 md:px-8 py-3 md:text-lg rounded-md transition">
+                    <button className="bg-[#E862FF] hover:bg-[#e862ffcc] text-white text-sm px-7 md:px-8 py-3 md:text-lg rounded-md transition">
                         Start Learning
                     </button>
                 </Link>
                 
               <Link to="/tools">
-                <button className="border border-[#110047] text-[#110047] hover:bg-[#110047] hover:text-white px-4 md:px-8 py-3 text-sm md:text-lg rounded-md transition">
+                <button className="border border-[#110047] text-[#110047] hover:bg-[#110047] hover:text-white px-7 md:px-8 py-3 text-sm md:text-lg rounded-md transition">
                   Explore Tools
                 </button>
               </Link>
@@ -40,6 +40,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-lg animate-fade-in">
               {/* <TaxIllustration /> */}
+              <img src="https://img.freepik.com/free-vector/bill-analysis-concept-illustration_114360-19348.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740" alt="" />
             </div>
           </div>
         </div>
