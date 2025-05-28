@@ -9,10 +9,10 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#110047] mb-6 animate-fade-in">
+            <h1 className="text-3xl lg:text-5xl font-bold text-[#110047] mb-4 animate-fade-in">
               UK Tax Made Simple
             </h1>
-            <h1 className="text-4xl  lg:text-5xl font-bold text-[#E862FF] mb-6 animate-fade-in">
+            <h1 className="text-3xl  lg:text-5xl font-bold text-[#E862FF] mb-4 animate-fade-in">
               Expert Tax, Accounting, and Financial Support
             </h1>
 
@@ -21,12 +21,15 @@ const Hero = () => {
               for UK freelancers, self-employed individuals, and small business owners.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-slide-up">
-              <button className="bg-[#E862FF] hover:bg-[#e862ffcc] text-white px-8 py-3 text-lg rounded-md transition">
-                Start Learning
-              </button>
+            <div className="flex sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-slide-up">
+                <Link to='/'>
+                    <button className="bg-[#E862FF] hover:bg-[#e862ffcc] text-white text-sm px-4 md:px-8 py-3 md:text-lg rounded-md transition">
+                        Start Learning
+                    </button>
+                </Link>
+                
               <Link to="/tools">
-                <button className="border border-[#110047] text-[#110047] hover:bg-[#110047] hover:text-white px-8 py-3 text-lg rounded-md transition">
+                <button className="border border-[#110047] text-[#110047] hover:bg-[#110047] hover:text-white px-4 md:px-8 py-3 text-sm md:text-lg rounded-md transition">
                   Explore Tools
                 </button>
               </Link>
