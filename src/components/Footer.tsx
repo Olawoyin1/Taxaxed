@@ -25,21 +25,23 @@ const Footer = () => {
   ];
 
   const company = [
-    { name: 'About Us', href: '/about' },
     { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Terms of Service', href: '/terms' },
     { name: 'Careers', href: '#' },
   ];
 
   return (
-    <footer className="bg-[#481488] text-white">
+    <footer className="bg-[#110047] text-white">
       <div className="container mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info - spans 2 columns */}
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <Link to="/" className="text-3xl font-bold text-[#6C2BD9] hover:text-[#7d3bff] transition-colors">
-                Taxaxed
+              <Link to="/" className="flex items-center gap-2">
+                <img src="/images/logo.png" className="w-9" alt="logo" />
+                <h1 className="text-2xl font-[700] font-satoshi text-white">
+                  Taxaxed<sup className="text-sm align-super">™</sup>
+                </h1>
               </Link>
               <p className="text-[#FFF7E8]/80 mt-4 leading-relaxed">
                 Making UK tax management simple and accessible for freelancers and small business owners.

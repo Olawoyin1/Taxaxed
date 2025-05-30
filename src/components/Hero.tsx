@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="pt-10 pb-10 bg-gradient-to-br from-[#FFFFDD] via-white to-gray-50">
+    <section className="py-20 bg-gradient-to-br from-[#FFFFDD] via-white to-gray-50">
       <div className="container mx-auto ">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
