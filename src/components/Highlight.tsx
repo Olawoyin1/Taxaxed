@@ -1,12 +1,13 @@
 
 import {
-  FaBook,
-  FaChartLine,
-  FaUserTie,
   FaReceipt,
-  FaBalanceScale,
   FaPiggyBank,
 } from "react-icons/fa";
+
+import { MdBalance } from "react-icons/md";
+import { GoBook } from "react-icons/go";
+import { GrUserExpert } from "react-icons/gr";
+import { AiOutlineLineChart } from "react-icons/ai";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,7 @@ const servicesHighlight = [
     title: "Bookkeeping Services",
     description:
       "Stay on top of your business finances with organized, accurate, and up-to-date bookkeeping tailored for UK regulations.",
-    icon: FaBook,
+    icon: GoBook,
     link: "/bookkeeping",
     bgColor: "#110047", // Electric Violet
   },
@@ -23,7 +24,7 @@ const servicesHighlight = [
     title: "Accounting Services",
     description:
       "Professional accounting for freelancers and small businesses—covering annual accounts, reporting, and compliance.",
-    icon: FaChartLine,
+    icon: AiOutlineLineChart,
     link: "/accounting",
     bgColor: "#481488", // Rich Indigo
   },
@@ -31,7 +32,7 @@ const servicesHighlight = [
     title: "Tax Advisory & Planning",
     description:
       "Strategic tax advice to help you reduce liabilities, plan for the future, and make the most of available allowances.",
-    icon: FaUserTie,
+    icon: GrUserExpert,
     link: "/tax-advisory",
     bgColor: "#E862FF", // Deep Purple
   },
@@ -47,7 +48,7 @@ const servicesHighlight = [
     title: "HMRC Compliance Support",
     description:
       "Expert help navigating Self Assessment, Making Tax Digital (MTD), and staying compliant with HMRC requirements.",
-    icon: FaBalanceScale,
+    icon: MdBalance,
     link: "/compliance",
     bgColor: "#4C1D95", // Indigo
   },

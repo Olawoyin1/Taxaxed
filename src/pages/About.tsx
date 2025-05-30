@@ -1,4 +1,363 @@
 
+// import { Target, Users, Lightbulb, Shield, Award, TrendingUp, Heart, Globe, Rocket, Building, CheckCircle } from 'lucide-react';
+
+// const About = () => {
+//   const values = [
+//     {
+//       icon: Target,
+//       title: 'Mission-Driven',
+//       description: 'We exist to democratize tax knowledge and make it accessible to every UK entrepreneur and freelancer.',
+//       color: 'from-blue-500 to-blue-600'
+//     },
+//     {
+//       icon: Users,
+//       title: 'Community-First',
+//       description: 'Our community of freelancers, small business owners, and tax professionals drives everything we do.',
+//       color: 'from-green-500 to-green-600'
+//     },
+//     {
+//       icon: Lightbulb,
+//       title: 'Innovation',
+//       description: 'We constantly innovate to make complex tax concepts simple and engaging for our users.',
+//       color: 'from-purple-500 to-purple-600'
+//     },
+//     {
+//       icon: Shield,
+//       title: 'Trust & Transparency',
+//       description: 'We provide accurate, up-to-date information you can rely on for your financial decisions.',
+//       color: 'from-orange-500 to-orange-600'
+//     }
+//   ];
+
+//   const milestones = [
+//     { year: '2024', title: 'Taxaxed Founded', description: 'Started with a vision to simplify UK tax for everyone' },
+//     { year: '2024', title: '1,000 Users', description: 'Reached our first milestone of helping 1,000 freelancers' },
+//     { year: '2024', title: '£500K Saved', description: 'Our community saved over £500K in tax through our guidance' },
+//     { year: '2024', title: '10,000+ Community', description: 'Grew to serve over 10,000 UK professionals' }
+//   ];
+
+//   const teamStats = [
+//     { icon: Award, number: '15+', label: 'Tax Experts', color: 'text-blue-600' },
+//     { icon: Globe, number: '50+', label: 'Years Combined Experience', color: 'text-green-600' },
+//     { icon: Heart, number: '10K+', label: 'Happy Users', color: 'text-purple-600' },
+//     { icon: TrendingUp, number: '£2.4M+', label: 'Tax Savings Generated', color: 'text-orange-600' }
+//   ];
+
+//   const platformFeatures = [
+//     {
+//       title: 'Cutting-Edge Technology',
+//       description: 'Built with the latest web technologies to ensure fast, reliable, and secure access to your tax information.',
+//       icon: Rocket,
+//       stats: '99.9% Uptime'
+//     },
+//     {
+//       title: 'Enterprise-Grade Security',
+//       description: 'Your data is protected with bank-level encryption and security measures that exceed industry standards.',
+//       icon: Shield,
+//       stats: 'ISO 27001 Certified'
+//     },
+//     {
+//       title: 'Continuous Innovation',
+//       description: 'We constantly evolve our platform based on user feedback and the latest tax regulations.',
+//       icon: TrendingUp,
+//       stats: 'Weekly Updates'
+//     },
+//     {
+//       title: 'Scalable Infrastructure',
+//       description: 'Our platform grows with you, from individual freelancers to large accounting firms.',
+//       icon: Building,
+//       stats: '100K+ Calculations/Day'
+//     }
+//   ];
+
+//   return (
+//     <div className="min-h-screen bg-white">
+//       <Navigation />
+      
+//       {/* Hero Section */}
+//       <section className="pt-24 pb-20 bg-gradient-to-br from-rich-indigo via-electric-violet/10 to-soft-cream relative overflow-hidden">
+//         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-electric-violet/20 via-transparent to-transparent"></div>
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+//           <div className="grid lg:grid-cols-2 gap-12 items-center">
+//             <div>
+//               <div className="inline-flex items-center px-4 py-2 bg-electric-violet/10 rounded-full text-electric-violet font-medium mb-6">
+//                 <Heart className="mr-2" size={16} />
+//                 Made with passion for UK entrepreneurs
+//               </div>
+//               <h1 className="text-5xl md:text-6xl font-bold text-rich-indigo mb-6 leading-tight">
+//                 Empowering UK 
+//                 <span className="block text-electric-violet">Tax Success</span>
+//               </h1>
+//               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+//                 We're not just another tax platform. We're your partners in building a thriving business, 
+//                 one tax-savvy decision at a time.
+//               </p>
+//               <div className="flex gap-4">
+//                 <Button size="lg" className="bg-electric-violet hover:bg-electric-violet/90 text-white px-8 py-4 rounded-xl">
+//                   Join Our Mission
+//                 </Button>
+//                 <Button size="lg" variant="outline" className="border-rich-indigo text-rich-indigo hover:bg-rich-indigo hover:text-white px-8 py-4 rounded-xl">
+//                   Meet the Team
+//                 </Button>
+//               </div>
+//             </div>
+            
+//             <div className="relative">
+//               <div className="bg-gradient-to-br from-electric-violet to-rich-indigo rounded-3xl p-8 text-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
+//                 <div className="grid grid-cols-2 gap-6">
+//                   {teamStats.map((stat, index) => (
+//                     <div key={index} className="text-center">
+//                       <stat.icon className="mx-auto mb-2 text-white/80" size={32} />
+//                       <div className="text-2xl font-bold">{stat.number}</div>
+//                       <div className="text-white/80 text-sm">{stat.label}</div>
+//                     </div>
+//                   ))}
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Our Story */}
+//       <section className="py-24 bg-white">
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="grid lg:grid-cols-3 gap-12">
+//             <div className="lg:col-span-2">
+//               <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-8">Our Story</h2>
+//               <div className="prose prose-lg text-gray-600 space-y-6">
+//                 <p className="text-xl leading-relaxed">
+//                   Taxaxed was born from a simple frustration: tax information for UK freelancers and small business owners was scattered, complex, and often intimidating. We saw talented entrepreneurs spending countless hours trying to understand their tax obligations instead of focusing on growing their businesses.
+//                 </p>
+//                 <p className="text-lg leading-relaxed">
+//                   Founded in 2024, we set out to change this narrative. Our team of tax professionals, content creators, and developers came together with one audacious goal: to make tax knowledge as accessible and engaging as your favorite social media feed.
+//                 </p>
+//                 <p className="text-lg leading-relaxed">
+//                   Today, we're proud to serve thousands of UK freelancers, self-employed individuals, and small business owners, helping them navigate the complexities of tax with confidence and even a smile.
+//                 </p>
+//               </div>
+//             </div>
+            
+//             <div className="space-y-6">
+//               <h3 className="text-2xl font-bold text-rich-indigo mb-6">Our Journey</h3>
+//               {milestones.map((milestone, index) => (
+//                 <div key={index} className="flex items-start space-x-4">
+//                   <div className="w-12 h-12 bg-electric-violet rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+//                     {index + 1}
+//                   </div>
+//                   <div>
+//                     <div className="text-electric-violet font-semibold">{milestone.year}</div>
+//                     <h4 className="font-semibold text-rich-indigo">{milestone.title}</h4>
+//                     <p className="text-gray-600 text-sm">{milestone.description}</p>
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Values */}
+//       <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">Our Values Drive Everything</h2>
+//             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+//               These aren't just words on a wall. They're the principles that guide every decision, 
+//               every feature, and every interaction at Taxaxed.
+//             </p>
+//           </div>
+          
+//           <div className="grid md:grid-cols-2 gap-8">
+//             {values.map((value, index) => (
+//               <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 border-transparent hover:border-electric-violet/30 overflow-hidden">
+//                 <div className="relative">
+//                   <div className={`absolute inset-0 bg-gradient-to-br ${value.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                  
+//                   <CardHeader className="relative">
+//                     <div className={`w-20 h-20 bg-gradient-to-br ${value.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+//                       <value.icon className="text-white" size={36} />
+//                     </div>
+//                     <CardTitle className="text-2xl font-bold text-rich-indigo group-hover:text-electric-violet transition-colors duration-300">
+//                       {value.title}
+//                     </CardTitle>
+//                   </CardHeader>
+                  
+//                   <CardContent className="relative">
+//                     <p className="text-gray-600 text-lg leading-relaxed">{value.description}</p>
+//                   </CardContent>
+//                 </div>
+//               </Card>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Platform Excellence Section */}
+//       <section className="py-24 bg-white">
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="text-center mb-16">
+//             <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">
+//               Built for Excellence, Designed for You
+//             </h2>
+//             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+//               Our platform combines cutting-edge technology with user-centered design to deliver 
+//               an unparalleled tax management experience.
+//             </p>
+//           </div>
+
+//           <div className="grid md:grid-cols-2 gap-8 mb-16">
+//             {platformFeatures.map((feature, index) => (
+//               <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 border-2 border-transparent hover:border-electric-violet/30 overflow-hidden">
+//                 <div className="relative">
+//                   <div className="absolute inset-0 bg-gradient-to-br from-electric-violet/5 to-rich-indigo/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+//                   <CardHeader className="relative">
+//                     <div className="flex items-center justify-between mb-4">
+//                       <div className="w-16 h-16 bg-gradient-to-br from-electric-violet to-rich-indigo rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+//                         <feature.icon className="text-white" size={28} />
+//                       </div>
+//                       <div className="bg-electric-violet/10 text-electric-violet px-3 py-1 rounded-full text-sm font-semibold">
+//                         {feature.stats}
+//                       </div>
+//                     </div>
+//                     <CardTitle className="text-2xl font-bold text-rich-indigo group-hover:text-electric-violet transition-colors duration-300">
+//                       {feature.title}
+//                     </CardTitle>
+//                   </CardHeader>
+                  
+//                   <CardContent className="relative">
+//                     <p className="text-gray-600 text-lg leading-relaxed">{feature.description}</p>
+//                   </CardContent>
+//                 </div>
+//               </Card>
+//             ))}
+//           </div>
+
+//           {/* Achievement Stats */}
+//           <div className="bg-gradient-to-br from-rich-indigo to-electric-violet rounded-3xl p-12 text-white">
+//             <div className="text-center mb-12">
+//               <h3 className="text-3xl md:text-4xl font-bold mb-4">Proven Results Speak Louder Than Words</h3>
+//               <p className="text-xl text-white/90">
+//                 Our commitment to excellence is reflected in every metric that matters
+//               </p>
+//             </div>
+
+//             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+//               <div className="text-center">
+//                 <div className="text-4xl md:text-5xl font-bold mb-2">99.8%</div>
+//                 <div className="text-white/80">User Satisfaction</div>
+//               </div>
+//               <div className="text-center">
+//                 <div className="text-4xl md:text-5xl font-bold mb-2">150+</div>
+//                 <div className="text-white/80">Tax Guides Published</div>
+//               </div>
+//               <div className="text-center">
+//                 <div className="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+//                 <div className="text-white/80">Platform Availability</div>
+//               </div>
+//               <div className="text-center">
+//                 <div className="text-4xl md:text-5xl font-bold mb-2">5-Star</div>
+//                 <div className="text-white/80">Average Rating</div>
+//               </div>
+//             </div>
+
+//             <div className="text-center mt-12">
+//               <Button className="bg-white text-rich-indigo hover:bg-white/90 py-4 px-8 rounded-xl font-semibold text-lg">
+//                 Experience Excellence Today
+//               </Button>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Commitment Section */}
+//       <section className="py-24 bg-gray-50">
+//         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="grid lg:grid-cols-2 gap-12 items-center">
+//             <div>
+//               <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">
+//                 Our Commitment to Your Success
+//               </h2>
+//               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+//                 Every feature, every guide, and every tool we create is designed with one purpose: 
+//                 empowering UK professionals to achieve financial confidence and business growth.
+//               </p>
+              
+//               <div className="space-y-6">
+//                 <div className="flex items-start space-x-4">
+//                   <div className="w-8 h-8 bg-electric-violet rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+//                     <CheckCircle className="text-white" size={20} />
+//                   </div>
+//                   <div>
+//                     <h3 className="text-xl font-semibold text-rich-indigo mb-2">Continuous Learning</h3>
+//                     <p className="text-gray-600">We stay ahead of tax law changes to keep you compliant and informed.</p>
+//                   </div>
+//                 </div>
+                
+//                 <div className="flex items-start space-x-4">
+//                   <div className="w-8 h-8 bg-electric-violet rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+//                     <CheckCircle className="text-white" size={20} />
+//                   </div>
+//                   <div>
+//                     <h3 className="text-xl font-semibold text-rich-indigo mb-2">User-Centric Design</h3>
+//                     <p className="text-gray-600">Every interface element is crafted based on real user feedback and behavior.</p>
+//                   </div>
+//                 </div>
+                
+//                 <div className="flex items-start space-x-4">
+//                   <div className="w-8 h-8 bg-electric-violet rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+//                     <CheckCircle className="text-white" size={20} />
+//                   </div>
+//                   <div>
+//                     <h3 className="text-xl font-semibold text-rich-indigo mb-2">Relentless Innovation</h3>
+//                     <p className="text-gray-600">We never stop improving, ensuring you always have access to the best tools.</p>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+            
+//             <div className="relative">
+//               <div className="bg-white rounded-3xl p-8 shadow-2xl border-2 border-electric-violet/20">
+//                 <h3 className="text-2xl font-bold text-rich-indigo mb-6 text-center">Join Our Growing Community</h3>
+                
+//                 <div className="grid grid-cols-2 gap-6 mb-8">
+//                   <div className="text-center p-4 bg-gray-50 rounded-xl">
+//                     <div className="text-2xl font-bold text-electric-violet mb-1">Active</div>
+//                     <div className="text-gray-600 text-sm">Community</div>
+//                   </div>
+//                   <div className="text-center p-4 bg-gray-50 rounded-xl">
+//                     <div className="text-2xl font-bold text-electric-violet mb-1">Expert</div>
+//                     <div className="text-gray-600 text-sm">Support</div>
+//                   </div>
+//                   <div className="text-center p-4 bg-gray-50 rounded-xl">
+//                     <div className="text-2xl font-bold text-electric-violet mb-1">Free</div>
+//                     <div className="text-gray-600 text-sm">Resources</div>
+//                   </div>
+//                   <div className="text-center p-4 bg-gray-50 rounded-xl">
+//                     <div className="text-2xl font-bold text-electric-violet mb-1">24/7</div>
+//                     <div className="text-gray-600 text-sm">Access</div>
+//                   </div>
+//                 </div>
+                
+//                 <Button className="w-full bg-gradient-to-r from-electric-violet to-rich-indigo hover:opacity-90 text-white py-3 rounded-xl font-semibold">
+//                   Get Started Today
+//                 </Button>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default About;
+
+
+
 const About = () => {
   return (
     <div>About</div>
