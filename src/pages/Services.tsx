@@ -135,8 +135,8 @@ const Services = () => {
               <div key={index} className="h-full bg-white border border-gray-200 hover:border-violet-900/30 transition-all duration-300 hover:shadow-lg rounded-2xl overflow-hidden">
                 <div className="p-8">
                   <div className="flex items-start space-x-4 mb-6">
-                    <div className="p-3 bg-electric-violet/10 rounded-xl">
-                      <service.icon className="text-electric-violet" size={28} />
+                    <div className="p-3 bg-gradient-to-br from-violet-900 to-indigo-00 rounded">
+                      <service.icon className="text-white" size={28} />
                     </div>
                   </div>
                   <div className="text-2xl font-bold text-rich-indigo mb-3">
@@ -151,7 +151,7 @@ const Services = () => {
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center text-gray-700">
-                        <div className="w-4 h-4 bg-electric-violet/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                        <div className="w-4 h-4 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                           <FaCheck className="text-electric-violet" size={10} />
                         </div>
                         <span className="text-sm">{feature}</span>
@@ -160,7 +160,7 @@ const Services = () => {
                   </div>
 
                   <Link to={service.link} className='block mt-4'>
-                    <button className="w-full flex items-center justify-center bg-indigo-900 hover:bg-indigo-900/90 text-white py-3 rounded-xl font-medium transition-all duration-300">
+                    <button className="w-full flex items-center justify-center bg-gradient-to-br from-violet-900 to-indigo-900 hover:bg-indigo-900/90 text-white py-3 rounded-xl font-medium transition-all duration-300">
                       Learn More      <BsArrowRight className="ml-2" size={16} />
                     </button>
                   </Link>
@@ -186,7 +186,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {whyChooseReasons.map((reason, index) => (
               <div key={index} className="flex flex-col items-start space-x-6 group">
-                <img src={reason.illustration} alt="" className='h-100' />
+                <img src={reason.illustration} alt="" className='h-90' />
                 {/* Number Circle */}
 
                 <div className='flex gap-3'>

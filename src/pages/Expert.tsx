@@ -1,3 +1,4 @@
+import FAQSection from "../components/FAQ";
 
 const TalkToExpertSection = () => {
   const benefits = [
@@ -8,6 +9,8 @@ const TalkToExpertSection = () => {
   ];
 
   return (
+    <>
+    
     <section className="py-20 bg-gradient-to-br from-[#E862FF] to-[#110047] text-white">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -91,7 +94,14 @@ const TalkToExpertSection = () => {
           </div>
         </div>
       </div>
+
+
     </section>
+
+    <div>
+      <FAQSection />
+    </div>
+    </>
   );
 };
 
