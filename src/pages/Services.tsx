@@ -107,11 +107,10 @@ const Services = () => {
               From beginner guides to expert consultations, discover the complete suite of services designed to make UK tax simple, accessible, and stress-free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-electric-violet hover:bg-electric-violet/90 text-white px-8 py-4 rounded-xl text-lg">
-                Explore Services
-                <FaArrowRight className="ml-2" size={20} />
+              <button className="bg-violet-900 flex items-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-lg">
+                Explore Services                <FaArrowRight className="ml-2" size={20} />
               </button>
-              <button className="border-rich-indigo text-rich-indigo hover:bg-rich-indigo hover:text-white px-8 py-4 rounded-xl text-lg">
+              <button className="border-indigo-400 text-rich-indigo hover:bg-rich-indigo hover:text-white px-8 py-4 rounded-xl text-lg">
                 Book Consultation
               </button>
             </div>
@@ -121,19 +120,19 @@ const Services = () => {
 
       {/* Services Grid */}
       <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto ">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">
               Choose Your Path to Success
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Every service designed with one goal: making UK tax management effortless for you
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="h-full bg-white border border-gray-200 hover:border-electric-violet/30 transition-all duration-300 hover:shadow-lg rounded-2xl overflow-hidden">
+              <div key={index} className="h-full bg-white border border-gray-200 hover:border-violet-900/30 transition-all duration-300 hover:shadow-lg rounded-2xl overflow-hidden">
                 <div className="p-8">
                   <div className="flex items-start space-x-4 mb-6">
                     <div className="p-3 bg-electric-violet/10 rounded-xl">
@@ -149,7 +148,7 @@ const Services = () => {
                 </div>
 
                 <div className="p-8 pt-0">
-                  <div className="space-y-3 mb-8">
+                  <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center text-gray-700">
                         <div className="w-4 h-4 bg-electric-violet/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
@@ -160,10 +159,9 @@ const Services = () => {
                     ))}
                   </div>
 
-                  <Link to={service.link}>
-                    <button className="w-full bg-rich-indigo hover:bg-rich-indigo/90 text-white py-3 rounded-xl font-medium transition-all duration-300">
-                      Learn More
-                      <FaArrowRight className="ml-2" size={16} />
+                  <Link to={service.link} className='mt-2'>
+                    <button className="w-full flex items-center justify-center bg-indigo-900 hover:bg-indigo-900/90 text-white py-3 rounded-xl font-medium transition-all duration-300">
+                      Learn More      <FaArrowRight className="ml-2" size={16} />
                     </button>
                   </Link>
                 </div>
@@ -175,9 +173,9 @@ const Services = () => {
 
       {/* Why Choose Us */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto ">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-6">
               Why 10,000+ Professionals Choose Taxaxed
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -190,7 +188,7 @@ const Services = () => {
               <div key={index} className="flex items-start space-x-6 group">
                 {/* Number Circle */}
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-electric-violet to-rich-indigo rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-violet-900 to-indigo-200 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                     {index + 1}
                   </div>
                 </div>
@@ -212,28 +210,28 @@ const Services = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="mt-20 bg-gradient-to-br from-electric-violet to-rich-indigo rounded-3xl p-8 text-white">
+          <div className="mt-20 bg-gradient-to-br from-violet-900 to-indigo-900 rounded-3xl p-8 text-white">
             <h3 className="text-3xl font-bold mb-8 text-center">Ready to Transform Your Tax Experience?</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">£2.4M+</div>
+                <div className="text-3xl font-bold mb-2">£2.4M+</div>
                 <div className="text-white/80">Tax Savings</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">98%</div>
+                <div className="text-3xl font-bold mb-2">98%</div>
                 <div className="text-white/80">Success Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">24hr</div>
+                <div className="text-3xl font-bold mb-2">24hr</div>
                 <div className="text-white/80">Response Time</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">10K+</div>
+                <div className="text-3xl font-bold mb-2">10K+</div>
                 <div className="text-white/80">Happy Users</div>
               </div>
             </div>
             <div className="text-center">
-              <button className="bg-white text-rich-indigo hover:bg-white/90 py-4 px-8 rounded-xl font-semibold text-lg">
+              <button className="bg-white text-indigo-900 hover:bg-white/90 py-4 px-8 rounded-xl font-semibold text-lg">
                 Start Your Journey Today
               </button>
             </div>

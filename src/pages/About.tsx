@@ -7,25 +7,25 @@ const About = () => {
       icon: Target,
       title: 'Mission-Driven',
       description: 'We exist to democratize tax knowledge and make it accessible to every UK entrepreneur and freelancer.',
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-violet-500 to-blue-600'
     },
     {
       icon: Users,
       title: 'Community-First',
       description: 'Our community of freelancers, small business owners, and tax professionals drives everything we do.',
-      color: 'from-green-500 to-green-600'
+      color: 'from-purple-500 to-green-600'
     },
     {
       icon: Lightbulb,
       title: 'Innovation',
       description: 'We constantly innovate to make complex tax concepts simple and engaging for our users.',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-yellow-500 to-purple-600'
     },
     {
       icon: Shield,
       title: 'Trust & Transparency',
       description: 'We provide accurate, up-to-date information you can rely on for your financial decisions.',
-      color: 'from-orange-500 to-orange-600'
+      color: 'from-orange-500 to-purple-600'
     }
   ];
 
@@ -80,7 +80,7 @@ const About = () => {
         <div className="container mx-auto  relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-electric-violet/10 border border-gray-00 rounded-full text-electric-violet font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-br from-indigo-900 via-violet-900/80 border border-gray-400 rounded-full text-electric-violet font-medium mb-6">
                 <Heart className="mr-2" size={16} />
                 Made with passion for UK entrepreneurs
               </div>
@@ -124,9 +124,9 @@ const About = () => {
         <div className="container mx-auto ">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-8">Our Story</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">Our Story</h2>
               <div className="prose prose-lg text-gray-600 space-y-6">
-                <p className="text-xl leading-relaxed">
+                <p className="leading-relaxed">
                   Taxaxed was born from a simple frustration: tax information for UK freelancers and small business owners was scattered, complex, and often intimidating. We saw talented entrepreneurs spending countless hours trying to understand their tax obligations instead of focusing on growing their businesses.
                 </p>
                 <p className="text-lg leading-relaxed">
@@ -161,8 +161,8 @@ const About = () => {
       <section className="py-14 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto ">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">Our Values Drive Everything</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">Our Values Drive Everything</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
               These aren't just words on a wall. They're the principles that guide every decision, 
               every feature, and every interaction at Taxaxed.
             </p>
@@ -175,8 +175,8 @@ const About = () => {
                   <div className={`absolute inset-0 bg-gradient-to-br ${value.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                   
                   <div className="relative">
-                    <div className={`w-20 h-20 bg-gradient-to-br ${value.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                      <value.icon className="text-white" size={36} />
+                    <div className={`w-14 h-14 bg-gradient-to-br ${value.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                      <value.icon className="text-white" size={24} />
                     </div>
                     <div className="text-2xl font-bold text-rich-indigo group-hover:text-electric-violet transition-colors duration-300">
                       {value.title}
@@ -197,10 +197,10 @@ const About = () => {
       <section className="py-14 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">
               Built for Excellence, Designed for You
             </h2>
-            <p className="text- text-gray-600 max-w-3xl mx-auto">
+            <p className=" text-gray-600 max-w-3xl mx-auto">
               Our platform combines cutting-edge technology with user-centered design to deliver 
               an unparalleled tax management experience.
             </p>
@@ -217,7 +217,7 @@ const About = () => {
                       <div className="w-16 h-16 bg-gradient-to-br from-violet-900 to-indigo-200 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <feature.icon className="text-white" size={28} />
                       </div>
-                      <div className="bg-electric-violet/10 text-electric-violet px-3 py-1 rounded-full text-sm font-semibold">
+                      <div className="bg-violet-900/10 text-violet-900 px-3 py-1 rounded-full text-sm font-semibold">
                         {feature.stats}
                       </div>
                     </div>
@@ -238,26 +238,26 @@ const About = () => {
           <div className="bg-gradient-to-br from-indigo-900 to-violet-700 rounded-3xl p-12 text-white">
             <div className="text-center mb-12">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">Proven Results Speak Louder Than Words</h3>
-              <p className="text-xl text-white/90">
+              <p className=" text-white/90">
                 Our commitment to excellence is reflected in every metric that matters
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">99.8%</div>
+                <div className="text-4xl  font-bold mb-2">99.8%</div>
                 <div className="text-white/80">User Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">150+</div>
+                <div className="text-4xl  font-bold mb-2">150+</div>
                 <div className="text-white/80">Tax Guides Published</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+                <div className="text-4xl  font-bold mb-2">24/7</div>
                 <div className="text-white/80">Platform Availability</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">5-Star</div>
+                <div className="text-4xl  font-bold mb-2">5-Star</div>
                 <div className="text-white/80">Average Rating</div>
               </div>
             </div>
@@ -276,7 +276,7 @@ const About = () => {
         <div className="container mx-auto ">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-rich-indigo mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">
                 Our Commitment to Your Success
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
