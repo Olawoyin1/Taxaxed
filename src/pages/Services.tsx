@@ -7,11 +7,11 @@ import {
   FaUsers,
   FaFileAlt,
   FaBolt,
-  FaArrowRight,
   FaStar,
   FaShieldAlt,
   FaChartLine,
 } from 'react-icons/fa';
+import { BsArrowRight } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -65,25 +65,25 @@ const Services = () => {
       title: 'HMRC Compliant',
       description: 'All our guidance follows current HMRC regulations and is updated with every tax law change.',
       icon: FaShieldAlt,
-      illustration: '🛡️'
+      illustration: 'https://img.freepik.com/free-vector/flat-worried-woman-have-list-credit-debts-overdue-bills-girl-reading-letter-from-collection-agency-about-financial-problems-loans-unpaid-tax-calculation-payment-expenses-concept_88138-805.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740'
     },
     {
       title: 'Expert Team',
       description: 'Our content is created and reviewed by qualified UK tax professionals and chartered accountants.',
       icon: FaUsers,
-      illustration: '👥'
+      illustration: 'https://img.freepik.com/premium-vector/black-people-team-illustration_1149263-15862.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740'
     },
     {
       title: 'Instant Results',
       description: 'Get immediate answers and calculations to make informed decisions about your tax planning.',
       icon: FaBolt,
-      illustration: '⚡'
+      illustration: 'https://img.freepik.com/free-vector/app-data-concept-illustration_114360-7834.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740'
     },
     {
       title: 'Always Updated',
       description: 'Stay current with the latest tax law changes and HMRC updates delivered directly to you.',
       icon: FaChartLine,
-      illustration: '📈'
+      illustration: 'https://img.freepik.com/free-vector/transfer-files-concept-landing-page_23-2148321609.jpg?ga=GA1.1.1092135121.1738813692&semt=ais_hybrid&w=740'
     }
   ];
   return (
@@ -107,10 +107,10 @@ const Services = () => {
               From beginner guides to expert consultations, discover the complete suite of services designed to make UK tax simple, accessible, and stress-free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-violet-900 flex items-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-lg">
-                Explore Services                <FaArrowRight className="ml-2" size={20} />
+              <button className="bg-violet-900 flex items-center justify-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-lg">
+                Explore Services                <BsArrowRight className="ml-2" size={20} />
               </button>
-              <button className="border-indigo-400 text-rich-indigo hover:bg-rich-indigo hover:text-white px-8 py-4 rounded-xl text-lg">
+              <button className="border-indigo-400 border hover:border-0 hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl text-lg">
                 Book Consultation
               </button>
             </div>
@@ -159,9 +159,9 @@ const Services = () => {
                     ))}
                   </div>
 
-                  <Link to={service.link} className='mt-2'>
+                  <Link to={service.link} className='block mt-4'>
                     <button className="w-full flex items-center justify-center bg-indigo-900 hover:bg-indigo-900/90 text-white py-3 rounded-xl font-medium transition-all duration-300">
-                      Learn More      <FaArrowRight className="ml-2" size={16} />
+                      Learn More      <BsArrowRight className="ml-2" size={16} />
                     </button>
                   </Link>
                 </div>
@@ -175,7 +175,7 @@ const Services = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto ">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">
               Why 10,000+ Professionals Choose Taxaxed
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -185,25 +185,28 @@ const Services = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {whyChooseReasons.map((reason, index) => (
-              <div key={index} className="flex items-start space-x-6 group">
+              <div key={index} className="flex flex-col items-start space-x-6 group">
+                <img src={reason.illustration} alt="" className='h-100' />
                 {/* Number Circle */}
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-violet-900 to-indigo-200 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    {index + 1}
-                  </div>
-                </div>
 
-                {/* Content */}
-                <div className="flex-grow">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <h3 className="text-2xl font-bold text-rich-indigo group-hover:text-electric-violet transition-colors duration-300">
-                      {reason.title}
-                    </h3>
-                    <div className="text-3xl">{reason.illustration}</div>
-                  </div>
-                  <p className="text-gray-600 text-lg leading-relaxed">
-                    {reason.description}
-                  </p>
+                <div className='flex gap-3'>
+                    <div className=" flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-to-br from-violet-900 to-indigo-200 rounded-full flex items-center justify-center text-white font-bold text-xl shadow group-hover:scale-110 transition-transform duration-300">
+                        {index + 1}
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-grow">
+                      <div className="flex items-center space-x-4 mb">
+                        <h3 className="text-2xl font-bold text-rich-indigo group-hover:text-electric-violet transition-colors duration-300">
+                          {reason.title}
+                        </h3>
+                      </div>
+                      <p className="text-gray-600 text-lg leading-relaxed">
+                        {reason.description}
+                      </p>
+                    </div>
                 </div>
               </div>
             ))}

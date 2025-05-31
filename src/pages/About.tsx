@@ -80,7 +80,7 @@ const About = () => {
         <div className="container mx-auto  relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-br from-indigo-900 via-violet-900/80 border border-gray-400 rounded-full text-electric-violet font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-br from-indigo-900 via-violet-900/80   rounded-full text-electric-violet font-medium mb-6">
                 <Heart className="mr-2" size={16} />
                 Made with passion for UK entrepreneurs
               </div>
@@ -96,7 +96,7 @@ const About = () => {
                 <button className="bg-violet-800 hover:bg-violet-900/90  px-8 py-4 rounded-xl">
                   Join Our Mission
                 </button>
-                <button  className="border border-gray-100 text-rich-indigo hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl">
+                <button  className="border border-gray-100 text-rich-indigo hover:bg-indigo-900 hover:text-white hover:border-0 px-8 py-4 rounded-xl">
                   Meet the Team
                 </button>
               </div>

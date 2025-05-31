@@ -3,9 +3,9 @@ import {
   FaCalculator,
   FaComments,
   FaShieldAlt,
-  FaChartLine,
   FaUsers,
 } from "react-icons/fa";
+import { MdOutlineBarChart } from "react-icons/md";
 
 const features = [
   {
@@ -30,7 +30,7 @@ const features = [
     gradient: "from-cream-500 to-purple-600",
   },
   {
-    icon: FaChartLine,
+    icon: MdOutlineBarChart,
     title: "Financial Growth",
     description:
       "Optimize your tax strategy to maximize savings and grow your business with our proven financial planning methodologies.",
