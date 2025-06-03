@@ -157,11 +157,13 @@ const Services = () => {
               From beginner guides to expert consultations, discover the complete suite of services designed to make UK tax simple, accessible, and stress-free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-violet-900 flex items-center justify-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-lg">
-                Explore Services                <BsArrowRight className="ml-2" size={20} />
-              </button>
+              <Link to="/services">
+                <button className="bg-violet-900 flex items-center justify-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-sm md:text-lg">
+                  Explore Services                <BsArrowRight className="ml-2" size={20} />
+                </button>
+              </Link>
               <Link to="/talk-to-an-expert">
-              <button className="bg-white text-indigo-900 hover:border-0 hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl text-lg">
+              <button className="bg-white text-indigo-900 hover:border-0 hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl text-sm md:text-lg">
                 Book Consultation
               </button>
               </Link>
