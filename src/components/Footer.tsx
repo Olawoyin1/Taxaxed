@@ -51,11 +51,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-[#FFF7E8]/80">
                 <FiMail className="text-lg" />
-                <span className="text-sm">hello@taxaxed.com</span>
+                <span className="text-sm">info@taxaxed.co.uk</span>
               </div>
               <div className="flex items-center gap-3 text-[#FFF7E8]/80">
                 <FiPhone className="text-lg" />
-                <span className="text-sm">+44 20 1234 5678</span>
+                <span className="text-sm">07723040922</span>
               </div>
               <div className="flex items-center gap-3 text-[#FFF7E8]/80">
                 <FiMapPin className="text-lg" />
