@@ -122,9 +122,9 @@ const Support = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {supportOptions.map((item, index) => (
-              <div key={index} className="border rounded-xl p-6 hover:shadow-lg transition">
+              <div key={index} className="border border-gray-200 rounded-xl p-6 hover:shadow transition">
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-electric-violet/10 text-electric-violet flex items-center justify-center rounded-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-violet-900 to-indigo-00 text-white text-electric-violet flex items-center justify-center rounded-md">
                     {item.icon}
                   </div>
                   <div>

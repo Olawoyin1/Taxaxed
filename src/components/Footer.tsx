@@ -18,10 +18,10 @@ const Footer = () => {
   ];
 
   const support = [
-    { name: 'Help Center', href: '/support#help' },
-    { name: 'FAQ', href: '/support#faq' },
-    { name: 'Contact Us', href: '/support#contact' },
-    { name: 'Ask an Expert', href: '/support#expert' },
+    { name: 'Help Center', href: '/contact#help' },
+    { name: 'FAQ', href: '/contact#faq' },
+    { name: 'Contact Us', href: '/contact#contact' },
+    { name: 'Ask an Expert', href: '/contact#expert' },
   ];
 
   const company = [
@@ -117,18 +117,18 @@ const Footer = () => {
             <div className="mt-8">
               <h5 className="font-medium text-white mb-4">Follow Us</h5>
               <div className="flex space-x-4">
-                <a href="#" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
+                <Link to="/" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
                   <FaFacebookF />
-                </a>
-                <a href="#" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
+                </Link>
+                <Link to="/" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
                   <FaTwitter />
-                </a>
-                <a href="#" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
+                </Link>
+                <Link to="/" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
                   <FaLinkedinIn />
-                </a>
-                <a href="#" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
+                </Link>
+                <Link to="/" className="text-[#FFF7E8]/80 hover:text-[#6C2BD9] transition-colors">
                   <FaInstagram />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
