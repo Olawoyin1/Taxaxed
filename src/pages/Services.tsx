@@ -156,7 +156,7 @@ const Services = () => {
             <p className="text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
               From beginner guides to expert consultations, discover the complete suite of services designed to make UK tax simple, accessible, and stress-free.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex gap-4 items-center  justify-center">
               <Link to="/services">
                 <button className="bg-violet-900 flex items-center justify-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-sm md:text-lg">
                   Explore Services                <BsArrowRight className="ml-2" size={20} />
