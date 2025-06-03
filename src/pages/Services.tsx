@@ -156,14 +156,14 @@ const Services = () => {
             <p className="text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
               From beginner guides to expert consultations, discover the complete suite of services designed to make UK tax simple, accessible, and stress-free.
             </p>
-            <div className="flex gap-4 items-center  justify-center">
-              <Link to="/services">
-                <button className="bg-violet-900 flex items-center justify-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-sm md:text-lg">
+            <div className="flex gap-4 flex-col md:flex-row items-center  justify-center">
+              <Link to="/services" className='w-full md:w-fit'>
+                <button className="bg-violet-900 w-full md:w-fit  flex items-center justify-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-sm md:text-lg">
                   Explore Services                <BsArrowRight className="ml-2" size={20} />
                 </button>
               </Link>
-              <Link to="/talk-to-an-expert">
-              <button className="bg-white text-indigo-900 hover:border-0 hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl text-sm md:text-lg">
+              <Link to="/talk-to-an-expert" className='w-full md:w-fit'>
+              <button className="bg-white w-full md:w-fit text-indigo-900 hover:border-0 hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl text-sm md:text-lg">
                 Book Consultation
               </button>
               </Link>
@@ -232,7 +232,7 @@ const Services = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">
               Why 1000+ Professionals Choose Taxaxed
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Discover what makes us the trusted choice for UK tax management
             </p>
           </div>
@@ -288,7 +288,7 @@ const Services = () => {
               </div>
             </div>
             <div className="text-center">
-              <button className="bg-white text-indigo-900 hover:bg-white/90 py-4 px-8 rounded-xl font-semibold text-lg">
+              <button className="bg-white text-indigo-900 hover:bg-white/90 py-4 px-8 rounded-xl font-semibold text-sm md:text-lg">
                 Start Your Journey Today
               </button>
             </div>
