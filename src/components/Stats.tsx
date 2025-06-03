@@ -1,10 +1,11 @@
 const StatsSection = () => {
-  const stats = [
-    { number: "10,000+", label: "UK Freelancers Helped" },
-    { number: "500+", label: "Tax Articles & Guides" },
-    { number: "50+", label: "Free Tools & Templates" },
-    { number: "24/7", label: "Community Support" },
-  ];
+const stats = [
+  { number: "1000+", label: "UK Freelancers Helped" },
+  { number: "500+", label: "HMRC & Tax Questions Answered" },
+  { number: "100+", label: "One-to-One Consultations Booked" },
+  { number: "24/7", label: "Community Support" },
+];
+
 
   return (
     <section className="py-16 bg-[#481488]">

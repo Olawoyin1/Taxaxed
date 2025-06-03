@@ -30,16 +30,16 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: '2024', title: 'Taxaxed Founded', description: 'Started with a vision to simplify UK tax for everyone' },
-    { year: '2024', title: '1,000 Users', description: 'Reached our first milestone of helping 1,000 freelancers' },
+    { year: '2018', title: 'Taxaxed Founded', description: 'Started with a vision to simplify UK tax for everyone' },
+    { year: '2024', title: 'Grew to serve thousands of UK professionals', description: 'Reached our first milestone of helping 1,000 freelancers' },
     { year: '2024', title: '£500K Saved', description: 'Our community saved over £500K in tax through our guidance' },
     { year: '2024', title: '10,000+ Community', description: 'Grew to serve over 10,000 UK professionals' }
   ];
 
   const teamStats = [
     { icon: Award, number: '15+', label: 'Tax Experts', color: 'text-blue-600' },
-    { icon: Globe, number: '50+', label: 'Years Combined Experience', color: 'text-green-600' },
-    { icon: Heart, number: '10K+', label: 'Happy Users', color: 'text-purple-600' },
+    { icon: Globe, number: '10+', label: 'Years Combined Experience', color: 'text-green-600' },
+    { icon: Heart, number: '1K+', label: 'Happy Users', color: 'text-purple-600' },
     { icon: TrendingUp, number: '£2.4M+', label: 'Tax Savings Generated', color: 'text-orange-600' }
   ];
 
@@ -130,7 +130,7 @@ const About = () => {
                   Taxaxed was born from a simple frustration: tax information for UK freelancers and small business owners was scattered, complex, and often intimidating. We saw talented entrepreneurs spending countless hours trying to understand their tax obligations instead of focusing on growing their businesses.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Founded in 2024, we set out to change this narrative. Our team of tax professionals, content creators, and developers came together with one audacious goal: to make tax knowledge as accessible and engaging as your favorite social media feed.
+                  Founded in 2018, we set out to change this narrative. Our team of tax professionals, content creators, and developers came together with one audacious goal: to make tax knowledge as accessible and engaging as your favorite social media feed.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Today, we're proud to serve thousands of UK freelancers, self-employed individuals, and small business owners, helping them navigate the complexities of tax with confidence and even a smile.

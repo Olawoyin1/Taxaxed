@@ -14,9 +14,9 @@ import { Link } from "react-router-dom";
 
 const servicesHighlight = [
   {
-    title: "Bookkeeping Services",
+    title: "Making Tax Digital",
     description:
-      "Stay on top of your business finances with organized, accurate, and up-to-date bookkeeping tailored for UK regulations.",
+      "We help business stay complaint with Making Tax Digital by providing expert supprt and fully MTD-compatible software solutions.",
     icon: GoBook,
     link: "/bookkeeping",
     bgColor: "#110047", // Electric Violet

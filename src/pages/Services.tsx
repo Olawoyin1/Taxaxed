@@ -97,7 +97,7 @@ const Services = () => {
           <div className="text-center text-white">
             <div className="inline-flex items-center px-4 py-2 bg-violet-900/10 rounded-full text-electric-violet font-medium mb-6">
               <FaStar className="mr-2" size={16} />
-              Trusted by 10,000+ UK professionals
+              Trusted by 1000+ UK professionals
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-rich-indigo mb-6 leading-tight">
               Transform Your
@@ -119,7 +119,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-14 bg-gray-50">
         <div className="container mx-auto ">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">
@@ -172,11 +172,11 @@ const Services = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-white">
+      <section className="py-14 bg-white">
         <div className="container mx-auto ">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">
-              Why 10,000+ Professionals Choose Taxaxed
+              Why 1000+ Professionals Choose Taxaxed
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Discover what makes us the trusted choice for UK tax management
@@ -229,7 +229,7 @@ const Services = () => {
                 <div className="text-white/80">Response Time</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold mb-2">10K+</div>
+                <div className="text-3xl font-bold mb-2">1K+</div>
                 <div className="text-white/80">Happy Users</div>
               </div>
             </div>
