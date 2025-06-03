@@ -98,7 +98,7 @@ const Navbar = () => {
           <Link to="/contact" className="hover:text-blue-600 transition-colors">Contact</Link>
           <Link to="/talk-to-an-expert">
             <button className="bg-[#E862FF] hover:bg-[#e862ffcc] text-white px-8 py-2 text-lg rounded-md transition">
-              Talk to an Expert
+              Talk To An Expert
             </button>
           </Link>
         </div>
@@ -124,7 +124,7 @@ const Navbar = () => {
           <Link to="/contact" onClick={closeMenu} className="hover:text-blue-600 transition-colors">Contact</Link>
           <Link to="/talk-to-an-expert" onClick={closeMenu}>
             <button className="w-full bg-[#E862FF] hover:bg-[#e862ffcc] text-white px-4 py-3 rounded-md text-center">
-              Talk to an Expert
+              Talk To An Expert
             </button>
           </Link>
         </div>

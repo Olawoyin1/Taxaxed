@@ -22,15 +22,15 @@ const Hero = () => {
             </p>
 
             <div className="flex sm:flex-row gap-4 justify-center lg:justify-start mb-7 md:mb-0 animate-slide-up">
-                <Link to='/'>
+                <Link to='/talk-to-an-expert'>
                     <button className="bg-[#E862FF] hover:bg-[#e862ffcc] text-white text-sm px-7 md:px-8 py-3 md:text-lg rounded-md transition">
-                        Start Learning
+                        Talk To An Expert
                     </button>
                 </Link>
                 
-              <Link to="/tools">
+              <Link to="/services">
                 <button className="border border-[#110047] text-[#110047] hover:bg-[#110047] hover:text-white px-7 md:px-8 py-3 text-sm md:text-lg rounded-md transition">
-                  Explore Tools
+                  Explore Services
                 </button>
               </Link>
             </div>

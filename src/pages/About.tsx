@@ -93,10 +93,10 @@ const About = () => {
                 one tax-savvy decision at a time.
               </p>
               <div className="flex gap-4">
-                <button className="bg-violet-800 hover:bg-violet-900/90  px-8 py-4 rounded-xl">
+                <button className="bg-violet-800 hover:bg-violet-900/90  text-sm md:text-lg  px-8 py-4 rounded-xl">
                   Join Our Mission
                 </button>
-                <button  className="border border-gray-100 text-rich-indigo hover:bg-indigo-900 hover:text-white hover:border-0 px-8 py-4 rounded-xl">
+                <button  className="text-sm md:text-lg bg-indigo-800 hover:bg-indigo-900 hover:text-white hover:border-0 px-8 py-4 rounded-xl">
                   Meet the Team
                 </button>
               </div>
@@ -142,7 +142,7 @@ const About = () => {
               <h3 className="text-2xl font-bold text-indigo-900 mb-6">Our Journey</h3>
               {milestones.map((milestone, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-violet-900 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#E862FF] to-[#110047] text-white rounded-full flex items-center justify-center  font-bold flex-shrink-0">
                     {index + 1}
                   </div>
                   <div>
@@ -217,7 +217,7 @@ const About = () => {
                       <div className="w-16 h-16 bg-gradient-to-br from-violet-900 to-indigo-200 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                         <feature.icon className="text-white" size={28} />
                       </div>
-                      <div className="bg-violet-900/10 text-violet-900 px-3 py-1 rounded-full text-sm font-semibold">
+                      <div className="bg-gradient-to-br from-[#E862FF] to-[#110047] text-white  px-3 py-1 rounded-full text-sm font-semibold">
                         {feature.stats}
                       </div>
                     </div>
@@ -263,7 +263,7 @@ const About = () => {
             </div>
 
             <div className="text-center mt-12">
-              <button className="bg-white text-indigo-900 hover:bg-white/90 py-4 px-8 rounded-xl font-semibold text-lg">
+              <button className="bg-white text-indigo-900 hover:bg-white/90 py-4 px-8 rounded-xl font-semibold text-sm md:text-lg">
                 Experience Excellence Today
               </button>
             </div>
@@ -286,7 +286,7 @@ const About = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-violet-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gradient-to-br from-[#E862FF] to-[#110047] text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <CheckCircle className="text-white" size={20} />
                   </div>
                   <div>
@@ -296,7 +296,7 @@ const About = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-violet-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gradient-to-br from-[#E862FF] to-[#110047] text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <CheckCircle className="text-white" size={20} />
                   </div>
                   <div>
@@ -306,7 +306,7 @@ const About = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-violet-900 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gradient-to-br from-[#E862FF] to-[#110047] text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <CheckCircle className="text-white" size={20} />
                   </div>
                   <div>
@@ -340,7 +340,7 @@ const About = () => {
                   </div>
                 </div>
                 
-                <button className="w-full bg-gradient-to-r from-violet-900 to-indigo-900 hover:opacity-90 text-white py-3 rounded-xl font-semibold">
+                <button className="w-full bg-gradient-to-r text-sm md:text-lg from-violet-900 to-indigo-900 hover:opacity-90 text-white py-3 rounded-xl font-semibold">
                   Get Started Today
                 </button>
               </div>

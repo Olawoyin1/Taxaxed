@@ -1,11 +1,11 @@
 // React Icons
 import {
   FaCheck,
-  FaBookOpen,
-  FaCalculator,
-  FaRegCommentDots,
+  // FaBookOpen,
+  // FaCalculator,
+  // FaRegCommentDots,
   FaUsers,
-  FaFileAlt,
+  // FaFileAlt,
   FaBolt,
   FaStar,
   FaShieldAlt,
@@ -14,51 +14,101 @@ import {
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
+
+
+import { GoBook } from "react-icons/go";
+import { AiOutlineLineChart } from "react-icons/ai";
+import { GrUserExpert } from "react-icons/gr";
+import { FaReceipt, FaPiggyBank } from "react-icons/fa";
+import { MdBalance } from "react-icons/md";
+
 const Services = () => {
-  const services = [
-    {
-      icon: FaBookOpen,
-      title: 'Tax Education Hub',
-      description: 'Comprehensive guides and resources covering all aspects of UK tax for freelancers and small businesses.',
-      features: ['Self-employment tax guides', 'VAT registration help', 'Expense claiming advice', 'Regular updates'],
-      link: '/services/tax-education-hub',
-    },
-    {
-      icon: FaCalculator,
-      title: 'Tax Tools & Calculators',
-      description: 'Professional-grade calculators and tools to help you estimate taxes and plan your finances.',
-      features: ['Income tax calculator', 'National Insurance calculator', 'VAT calculator', 'Expense tracker'],
-      link: '/services/tax-tools',
-    },
-    {
-      icon: FaFileAlt,
-      title: 'Templates & Resources',
-      description: 'Downloadable templates and checklists to streamline your tax and accounting processes.',
-      features: ['Invoice templates', 'Expense sheets', 'Tax checklists', 'Record keeping guides'],
-      link: '#',
-    },
-    {
-      icon: FaRegCommentDots,
-      title: 'Expert Support',
-      description: 'Get personalized advice from qualified tax professionals when you need it most.',
-      features: ['One-on-one consultations', 'Email support', 'Priority response', 'Custom guidance'],
-      link: '#',
-    },
-    {
-      icon: FaUsers,
-      title: 'Community Access',
-      description: 'Join our thriving community of UK freelancers and small business owners.',
-      features: ['Discussion forums', 'Networking events', 'Peer support', 'Success stories'],
-      link: '#',
-    },
-    {
-      icon: FaBolt,
-      title: 'Premium Resources',
-      description: 'Advanced tools and in-depth guides for complex tax situations and business growth.',
-      features: ['Advanced calculators', 'Detailed guides', 'Video tutorials', 'Priority updates'],
-      link: '#',
-    }
-  ];
+ const services = [
+  {
+    icon: GoBook,
+    title: "Making Tax Digital",
+    description:
+      "We help businesses stay compliant with Making Tax Digital by offering expert support and software tools that meet HMRC's digital requirements.",
+    features: [
+      "MTD-compliant bookkeeping software",
+      "Expert setup and training",
+      "Ongoing digital compliance checks",
+      "Support for quarterly submissions",
+    ],
+    link: "/bookkeeping",
+    bgColor: "#110047", // Electric Violet
+  },
+  {
+    icon: AiOutlineLineChart,
+    title: "Accounting Services",
+    description:
+      "Professional accounting solutions for freelancers and small businesses, including annual accounts, financial reporting, and compliance support.",
+    features: [
+      "Annual accounts preparation",
+      "Self-assessment filing",
+      "Corporation tax support",
+      "Year-end reporting",
+    ],
+    link: "/accounting",
+    bgColor: "#481488", // Rich Indigo
+  },
+  {
+    icon: GrUserExpert,
+    title: "Tax Advisory & Planning",
+    description:
+      "Strategic tax planning and expert advice to minimize liabilities, optimize financial outcomes, and plan for business growth.",
+    features: [
+      "Personalized tax strategy",
+      "Retirement and pension planning",
+      "Capital gains optimization",
+      "Allowances and reliefs guidance",
+    ],
+    link: "/tax-advisory",
+    bgColor: "#E862FF", // Deep Purple
+  },
+  {
+    icon: FaReceipt,
+    title: "VAT Registration & Filing",
+    description:
+      "Expert assistance with VAT threshold evaluation, registration, and accurate quarterly submissions to HMRC.",
+    features: [
+      "VAT registration support",
+      "Quarterly VAT returns",
+      "MTD for VAT integration",
+      "Flat rate and standard VAT advice",
+    ],
+    link: "/vat-services",
+    bgColor: "#5A189A", // Royal Purple
+  },
+  {
+    icon: MdBalance,
+    title: "HMRC Compliance Support",
+    description:
+      "Comprehensive support to help you stay compliant with Self Assessment, Making Tax Digital, and HMRC’s ongoing requirements.",
+    features: [
+      "Self Assessment filing",
+      "Digital record-keeping",
+      "Deadline and penalty avoidance",
+      "Audit preparation support",
+    ],
+    link: "/compliance",
+    bgColor: "#4C1D95", // Indigo
+  },
+  {
+    icon: FaPiggyBank,
+    title: "Tax-Saving Opportunities",
+    description:
+      "Uncover deductions, reliefs, and smart strategies to help you save money and reduce your overall UK tax liability legally.",
+    features: [
+      "Expense deduction tracking",
+      "Tax-efficient investment advice",
+      "Marriage and capital gains allowances",
+      "Freelancer-specific tax tips",
+    ],
+    link: "/tax-saving",
+    bgColor: "#3C096C", // Deep Violet
+  },
+];
 
   const whyChooseReasons = [
     {
@@ -110,9 +160,11 @@ const Services = () => {
               <button className="bg-violet-900 flex items-center justify-center hover:bg-violet-800/90 text-white px-8 py-4 rounded-xl text-lg">
                 Explore Services                <BsArrowRight className="ml-2" size={20} />
               </button>
-              <button className="border-indigo-400 border hover:border-0 hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl text-lg">
+              <Link to="/talk-to-an-expert">
+              <button className="bg-white text-indigo-900 hover:border-0 hover:bg-indigo-900 hover:text-white px-8 py-4 rounded-xl text-lg">
                 Book Consultation
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -133,7 +185,7 @@ const Services = () => {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div key={index} className="h-full bg-white border border-gray-200 hover:border-violet-900/30 transition-all duration-300 hover:shadow-lg rounded-2xl overflow-hidden">
-                <div className="p-8">
+                <div className="p-7">
                   <div className="flex items-start space-x-4 mb-6">
                     <div className="p-3 bg-gradient-to-br from-violet-900 to-indigo-00 rounded">
                       <service.icon className="text-white" size={28} />
@@ -147,7 +199,7 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="p-8 pt-0">
+                <div className="p-7 pt-0">
                   <div className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center text-gray-700">
@@ -160,7 +212,7 @@ const Services = () => {
                   </div>
 
                   <Link to={service.link} className='block mt-4'>
-                    <button className="w-full flex items-center justify-center bg-gradient-to-br from-violet-900 to-indigo-900 hover:bg-indigo-900/90 text-white py-3 rounded-xl font-medium transition-all duration-300">
+                    <button className="w-full flex items-center justify-center bg-gradient-to-br from-violet-900 to-indigo-900 hover:bg-indigo-900/90 text-white py-3 rounded-lg font-medium transition-all duration-300">
                       Learn More      <BsArrowRight className="ml-2" size={16} />
                     </button>
                   </Link>
@@ -191,7 +243,7 @@ const Services = () => {
 
                 <div className='flex gap-3'>
                     <div className=" flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-br from-violet-900 to-indigo-200 rounded-full flex items-center justify-center text-white font-bold text-xl shadow group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#E862FF] to-[#110047] text-white rounded-full flex items-center justify-center font-bold text-xl shadow group-hover:scale-110 transition-transform duration-300">
                         {index + 1}
                       </div>
                     </div>

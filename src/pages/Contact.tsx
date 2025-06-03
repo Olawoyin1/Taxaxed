@@ -122,7 +122,7 @@ const Support = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {supportOptions.map((item, index) => (
-              <div key={index} className="border border-gray-200 rounded-xl p-6 hover:shadow transition">
+              <div key={index} className="border bg-white border-gray-200 rounded-xl p-6 hover:shadow transition">
                 <div className="flex items-start space-x-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-violet-900 to-indigo-00 text-white text-electric-violet flex items-center justify-center rounded-md">
                     {item.icon}
@@ -149,32 +149,32 @@ const Support = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">Send Us a Message</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-rich-indigo mb-4">Send Us A Message</h2>
             <p className="text-gray-600">Can't find what you're looking for? Drop us a line and we'll help you out.</p>
           </div>
-          <div className="bg-white border p-8 rounded-xl shadow-md">
+          <div className="bg-white border border-gray-200 p-8 rounded-xl shadow-md">
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                  <input type="text" placeholder="Enter your first name" className="w-full border p-3 rounded-md focus:ring-2 focus:ring-electric-violet" />
+                  <input type="text" placeholder="Enter your first name" className="w-full border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-violet-900 focus:border-violet-900" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                  <input type="text" placeholder="Enter your last name" className="w-full border p-3 rounded-md focus:ring-2 focus:ring-electric-violet" />
+                  <input type="text" placeholder="Enter your last name" className="w-full border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-violet-900 focus:border-violet-900" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                <input type="email" placeholder="Enter your email address" className="w-full border p-3 rounded-md focus:ring-2 focus:ring-electric-violet" />
+                <input type="email" placeholder="Enter your email address" className="w-full border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-violet-900 focus:border-violet-900" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
-                <input type="text" placeholder="What can we help you with?" className="w-full border p-3 rounded-md focus:ring-2 focus:ring-electric-violet" />
+                <input type="text" placeholder="What can we help you with?" className="w-full border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-violet-900 focus:border-violet-900" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea rows={6} placeholder="Please describe your question or issue in detail..." className="w-full border p-3 rounded-md focus:ring-2 focus:ring-electric-violet"></textarea>
+                <textarea rows={6} placeholder="Please describe your question or issue in detail..." className="w-full border border-gray-200 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-violet-900 focus:border-violet-900"></textarea>
               </div>
               <button className="w-full bg-violet-900 text-white py-3 rounded-md hover:bg-electric-violet/90 transition">
                 Send Message

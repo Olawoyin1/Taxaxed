@@ -49,7 +49,7 @@ const WhyChooseTaxaxed = () => {
                 key={index}
                 className="group h-full border border-transparent hover:border-[#6C2BD9]/30 transition-all duration-300 hover:shadow hover:scale-105 rounded-xl p-6 text-center bg-white"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-[#6C2BD9] to-[#481488] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#E862FF] to-[#110047] text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="text-white" size={22} />
                 </div>
                 <h3 className="text-lg font-bold text-[#481488] mb-3">{item.title}</h3>
