@@ -10,12 +10,13 @@ const Footer = () => {
     { name: 'Self-Employment', href: '/learn#self-employment' },
   ];
 
-  const services = [
-    { name: 'Tax Education Hub', href: '/services/tax-education-hub' },
-    { name: 'Tax Tools', href: '/services/tax-tools' },
-    { name: 'Expert Support', href: '/services#expert-support' },
-    { name: 'Premium Resources', href: '/services#premium-resources' },
-  ];
+ const services = [
+  { name: 'Making Tax Digital', href: '/bookkeeping' },
+  { name: 'Accounting Services', href: '/accounting' },
+  { name: 'Tax Advisory & Planning', href: '/tax-advisory' },
+  { name: 'VAT Registration & Filing', href: '/vat-services' },
+  { name: 'HMRC Compliance Support', href: '/compliance' },
+];
 
   const support = [
     { name: 'Help Center', href: '/contact#help' },
@@ -138,8 +139,9 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <p className="text-[#FFF7E8]/80 text-sm">
-              © 2024 Taxaxed. All rights reserved.
+              © {new Date().getFullYear()} Taxaxed. All rights reserved.
             </p>
+
             <div className="flex flex-wrap gap-6">
               {company.map((item) => (
                 <Link
