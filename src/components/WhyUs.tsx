@@ -16,7 +16,7 @@ const whyChooseUs = [
   },
   {
     title: "Proven Track Record",
-    description: "Over 10,000 freelancers trust us with their tax education and planning",
+    description: "Over 1000 freelancers trust us with their tax education and planning",
     icon: Users,
   },
   {

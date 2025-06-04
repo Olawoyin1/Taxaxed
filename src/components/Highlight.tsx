@@ -16,7 +16,7 @@ const servicesHighlight = [
   {
     title: "Making Tax Digital",
     description:
-      "We help business stay complaint with Making Tax Digital by providing expert supprt and fully MTD-compatible software solutions.",
+      "We help businesses stay compliant with Making Tax Digital by providing expert support and fully MTD-compatible software solutions.",
     icon: GoBook,
     link: "/bookkeeping",
     bgColor: "#110047", // Electric Violet
