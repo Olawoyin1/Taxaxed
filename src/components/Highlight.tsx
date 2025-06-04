@@ -24,7 +24,7 @@ const servicesHighlight = [
   {
     title: "Accounting Services",
     description:
-      "Professional accounting for freelancers and small businesses—covering annual accounts, reporting, and compliance.",
+      "Professional accounting for freelancers and small businesses covering annual accounts, reporting, and compliance.",
     icon: AiOutlineLineChart,
     link: "/accounting",
     bgColor: "#481488", // Rich Indigo
